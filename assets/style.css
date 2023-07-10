@@ -4,4 +4,36 @@
 
 * {
     font-family: 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+li {
+    margin: 0px 10px;
+}
+
+.portfolio-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-box {
+    border: 1px solid black;
+    width: 35%;
+    height: 300px;
+}
+
+#bigger-box {
+    width: 70%;
 }
