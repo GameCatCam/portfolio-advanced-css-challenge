@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--TODO:
+1. Name, photo, and the section of the page (DONE)
+2. Functioning Nav bar (DONE)
+3. Finished Portfolio section
+4. Large first image in portfolio section (DONE)
+5. Functioning Portfolio section (DONE)
+6. Media Applicators (DONE?)-->
 <head>
     <title>Cameron Rawlins Practice Portfolio Challenge</title>
     <meta charset="UTF-8"/>
@@ -27,8 +33,11 @@
         </nav>
     </header>
 
-    <div>
-        <h2 class="section-headers" id="about-me">About Me!</h2>
+    <div class="bio">
+        <aside>
+            <h2 class="section-headers" id="about-me">About Me!</h2>
+        </aside>
+        <img class="self-portrait" src="./assets/Cam Self Portrait.PNG">
         <p>Beginner web developer hoping to help bring your dream web page to life.</p>
     </div>
 
@@ -37,10 +46,12 @@
             <h2>My Work</h2>
         </section>
         <div class="portfolio-boxes">
-            <section class="portfolio-box" id="bigger-box">
-                <p>Placeholder Application A</p>
-                <img src="./assets/bee.jpeg" alt="placeholder image">
-            </section>
+            <a href="https://gamecatcam.github.io/Module-1-Horiseon-Refactor-Challenge/" class="portfolio-box" id="bigger-box">
+                <figure>
+                    <img src="./assets/bee.jpeg" alt="placeholder image">
+                    <figcaption>Horiseon Landing Page (Refactored)</figcaption>
+                </figure>
+            </a>
             <section class="portfolio-box">
                 <p>Placeholder Application B</p>
                 <img src="./assets/bee.jpeg" alt="placeholder image">

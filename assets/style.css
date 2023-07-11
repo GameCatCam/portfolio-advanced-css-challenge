@@ -2,12 +2,12 @@
 
 }
 
-* {
+* { /*Sets BG color for webpage and also the font of the page itself*/
     font-family: 'Times New Roman', Times, serif;
     background-color: aquamarine;
 }
 
-header {
+header { /*Sets the width for the header and the border/flex box*/
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -23,6 +23,10 @@ li {
     margin: 0px 10px;
 }
 
+section img {
+    object-fit: contain;
+}
+
 .portfolio-boxes {
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +38,22 @@ li {
     height: 300px;
 }
 
+.self-portrait {
+    height: 200px;
+    width:  200px;
+    border: 2px solid black;
+}
+
 #bigger-box {
     width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-boxes {
+        flex-direction: column;
+    }
+
+    #bigger-box {
+        width: 35%;
+    }
 }
