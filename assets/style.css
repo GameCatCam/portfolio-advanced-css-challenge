@@ -12,11 +12,14 @@ header { /*Sets the width for the header and the border/flex box*/
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid black;
+    position: sticky;
+    top: 0px;
 }
 
 ul {
     display: inline-flex;
     list-style-type: none;
+    font-size: xx-large;
 }
 
 li {
