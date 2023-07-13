@@ -10,4 +10,4 @@ This is an example portfolio site for me. I set it up with guidelines in mind, t
 https://gamecatcam.github.io/portfolio-advanced-css-challenge/
 
 ## Credits
-All code presented in this project was done by me (Cameron Rawlins).
+All code presented in this project was done by me (Cameron Rawlins). Various sites such as [mdnwebdocs](https://developer.mozilla.org/en-US/)https://developer.mozilla.org/en-US/ were used in terms of referencing formatting for specific portions of the code. Thanks to Ross Ritchey, my instructor, in direction for various parts such as the figure setup in the portfolio section.
