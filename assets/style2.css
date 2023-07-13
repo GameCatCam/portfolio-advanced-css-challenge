@@ -1,0 +1,118 @@
+* {
+    font-family: fantasy;
+}
+
+body {
+    background-color: teal;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px;
+}
+
+header { /*Sets the width for the header and the border/flex box*/
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0px;
+    background-color: #0E69A3;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+h2 {
+    margin: auto;   
+}
+
+li {
+    margin: 0px 10px;
+}
+
+figure {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+}
+
+.nav-bar {
+    display: inline-flex;
+    list-style-type: none;
+    font-size: xx-large;
+}
+
+.bio {
+    width: 100%;
+    text-align: center;
+    background-color: beige;
+    border-bottom: 20px dashed;
+    border-top: 20px dashed;
+}
+
+.self-portrait {
+    height: 25%;
+    width: 25%;
+    border-radius: 50%;
+}
+
+.portfolio {
+    background-color: #5BF4EC;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.portfolio-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-box {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 35%;
+    height: 300px;
+    margin: 2px;
+}
+
+.contact {
+    background-color: #622AEF;
+}
+
+#bigger-box {
+    width: 70%;
+    height: 450px;
+}
+
+#contact-list {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+#port-img {
+    height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-boxes {
+        flex-direction: column;
+    }
+
+    #bigger-box {
+        width: 35%;
+    }
+}

@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--TODO:
-1. Name, photo, and the section of the page (DONE)
-2. Functioning Nav bar (DONE)
-3. Finished Portfolio section
-4. Large first image in portfolio section (DONE)
-5. Functioning Portfolio section (DONE)
-6. Media Applicators (DONE?)-->
+
 <head>
     <title>Cameron Rawlins Practice Portfolio Challenge</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/style.css"/>
+   <!--<link rel="stylesheet" type="text/css" href="./assets/style.css"/> -->
+    <link rel="stylesheet" type="text/css" href="./assets/style2.css"/>
 </head>
 
 <body>
@@ -19,7 +14,7 @@
         <h1>Cameron Rawlins</h1>
 
         <nav>
-            <ul>
+            <ul class="nav-bar">
                 <li>
                     <a href="#about-me" style="color:purple">About Me!</a>
                 </li>
@@ -33,47 +28,51 @@
         </nav>
     </header>
 
-    <div class="bio">
+    <section class="bio">
         <aside>
             <h2 class="section-headers" id="about-me">About Me!</h2>
         </aside>
         <img class="self-portrait" src="./assets/Cam Self Portrait.PNG">
         <p>Beginner web developer hoping to help bring your dream web page to life.</p>
-    </div>
+    </section>
 
-    <div> <!--Start of the Portfolio boxes-->
-        <section class="section-headers" id="portfolio">
+    <div class="portfolio" id="portfolio"> <!--Start of the Portfolio boxes-->
+        <section class="section-headers">
             <h2>My Work</h2>
         </section>
         <div class="portfolio-boxes">
             <a href="https://gamecatcam.github.io/Module-1-Horiseon-Refactor-Challenge/" class="portfolio-box" id="bigger-box">
                 <figure>
-                    <img src="./assets/bee.jpeg" alt="placeholder image">
+                    <img id="port-img" src="./assets/01-html-css-git-homework-demo.png" alt="image of Horiseon website">
                     <figcaption>Horiseon Landing Page (Refactored)</figcaption>
                 </figure>
             </a>
-            <section class="portfolio-box">
-                <p>Placeholder Application B</p>
-                <img src="./assets/bee.jpeg" alt="placeholder image">
-            </section>
-            <section class="portfolio-box">
-                <p>Placeholder Application C</p>
-                <img src="./assets/bee.jpeg" alt="placeholder image">
-            </section>
+            <a href="#" class="portfolio-box">
+                <figure>
+                    <img src="./assets/bee.jpeg" alt="placeholder image">
+                    <figcaption>Placeholder Image and Text</figcaption>
+                </figure>
+            </a>
+            <a href="#" class="portfolio-box">
+                <figure>
+                    <img src="./assets/bee.jpeg" alt="placeholder image">
+                    <figcaption>Placeholder Image and Text</figcaption>
+                </figure>
+            </a>
         </div>
     </div>
 
-    <div> <!--Contact Info section starts here-->
+    <div class="contact"> <!--Contact Info section starts here-->
         <section>
             <h2 class="section-headers" id="contact-me">Contact Me!</h2>
-            <ul>
+            <ul id="contact-list">
                 <li>
-                    <a href="https://github.com/GameCatCam">Github</a>
+                    <a href="https://github.com/GameCatCam" style="color:white">Github</a>
                 <li>
-                    <a href="https://www.linkedin.com/in/cameron-rawlins-1b0b71277/">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/cameron-rawlins-1b0b71277/" style="color:white">LinkedIn</a>
                 </li>
                 <li>
-                    <a href="#">Secret Third Option</a>
+                    <a href="#" style="color:white">Secret Third Option</a>
                 </li>
             </ul>
         </section>

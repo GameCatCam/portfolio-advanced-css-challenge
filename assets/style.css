@@ -1,5 +1,5 @@
 :root {
-
+    --top-bottom: blueviolet;
 }
 
 * { /*Sets BG color for webpage and also the font of the page itself*/
@@ -14,12 +14,11 @@ header { /*Sets the width for the header and the border/flex box*/
     border-bottom: 2px solid black;
     position: sticky;
     top: 0px;
+    background: var(--top-bottom);
 }
 
-ul {
-    display: inline-flex;
-    list-style-type: none;
-    font-size: xx-large;
+header * {
+    background: var(--top-bottom);
 }
 
 li {
@@ -28,6 +27,18 @@ li {
 
 section img {
     object-fit: contain;
+}
+
+footer * {
+    width: 100%;
+    height: 20px;
+    background: blueviolet;
+}
+
+.nav-bar {
+    display: inline-flex;
+    list-style-type: none;
+    font-size: xx-large;
 }
 
 .portfolio-boxes {
