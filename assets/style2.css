@@ -29,6 +29,11 @@ h2 {
 
 li {
     margin: 0px 10px;
+    border: black dotted;
+}
+
+section ul li {
+    border: 0px;
 }
 
 figure {
@@ -46,6 +51,14 @@ footer {
 
 h3 {
     text-align: center;
+}
+
+figcaption {
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .nav-bar {
@@ -105,14 +118,27 @@ h3 {
 
 #port-img {
     height: 300px;
+    border-radius: 25%;
+    border: 2px black;
+}
+
+#other-img {
+    border-radius: 25%;
+    border: 2px black;
 }
 
 @media screen and (max-width: 768px) {
     .portfolio-boxes {
         flex-direction: column;
+        align-content: center;
+    }
+
+    .portfolio-box {
+        width: 45%;
+        justify-content: center;
     }
 
     #bigger-box {
-        width: 35%;
+        width: 90%;
     }
 }
