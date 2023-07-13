@@ -1,10 +1,12 @@
-:root {
-    --top-bottom: blueviolet;
+* {
+    font-family: fantasy;
 }
 
-* { /*Sets BG color for webpage and also the font of the page itself*/
-    font-family: 'Times New Roman', Times, serif;
-    background-color: aquamarine;
+body { /* Sets BG Color and the page and margin size.*/
+    background-color: teal;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px;
 }
 
 header { /*Sets the width for the header and the border/flex box*/
@@ -14,60 +16,142 @@ header { /*Sets the width for the header and the border/flex box*/
     border-bottom: 2px solid black;
     position: sticky;
     top: 0px;
-    background: var(--top-bottom);
+    background-color: #0E69A3;
 }
 
-header * {
-    background: var(--top-bottom);
+h1 { /*adds margin to top of page header element */
+    margin-left: 20px;
 }
 
-li {
+h2 { /*Sets margin for h2 elements of each section */
+    margin: 0px auto;   
+}
+
+li { /* sets a margin and border for the nav bar links as well as their color */
     margin: 0px 10px;
+    padding: 3px;
+    background-color: #fff3cc;
+    border: black dashed;
 }
 
-section img {
-    object-fit: contain;
+section ul li { /* removes the border that the above portion sets from the contact me links. */
+    border: 0px;
 }
 
-footer * {
+figure { /* sets the size of the figures for the portfolio boxes as well as centering them */
+    height: 100%;
     width: 100%;
-    height: 20px;
-    background: blueviolet;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-bar {
+footer { /* sets the width of the footer */
+    width: 100%;
+}
+
+h3 { /* aligns the footer */
+    text-align: center;
+}
+
+figcaption { /* adds a margin to the text inside the figures */
+    margin-left: 5px;
+}
+
+a { /*removes the underline from the nav links */
+    text-decoration: none;
+}
+
+.nav-bar { /* sets the nav bar to be horizontal and removes the bullet point */
     display: inline-flex;
     list-style-type: none;
     font-size: xx-large;
 }
 
-.portfolio-boxes {
+.bio { /* Creates a border for the bio section and gives it a background color */
+    width: 100%;
+    text-align: center;
+    background-color: beige;
+    border-bottom: 20px dashed;
+    border-top: 20px dashed;
+}
+
+.self-portrait { /* resizes the portrait and adds a border radius */
+    height: 25%;
+    width: 25%;
+    border-radius: 50%;
+}
+
+.portfolio { /* adds padding and a background color to the portfolio section */
+    background-color: #5BF4EC;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.portfolio-boxes { /* allows the portfolio boxes to wrap in their section and centers them */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.portfolio-box {
-    border: 1px solid black;
+.portfolio-box { /* adds border, size, and margins to the portfolio boxes. */
+    border: 2px solid black;
+    border-radius: 50%;
     width: 35%;
     height: 300px;
+    margin: 2px;
 }
 
-.self-portrait {
-    height: 200px;
-    width:  200px;
-    border: 2px solid black;
+.contact { /* colors the contact me section */
+    background-color: #622AEF;
 }
 
-#bigger-box {
+#bigger-box { /* makes the first portfolio box larger than the others */
     width: 70%;
+    height: 450px;
 }
 
-@media screen and (max-width: 768px) {
+#contact-list { /* sets the contact list horizontally and spaces them */
+    width: 75%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+#port-img { /* resizes the img inside the larger box for the portfolio */
+    height: 300px;
+    border-radius: 25%;
+    border: 2px black;
+}
+
+#other-img { /* sets a border and radius for the other portfolio images */
+    border-radius: 25%;
+    border: 2px black;
+}
+
+/*resizes the portfolio boxes to arrange vertically when the scren is smaller */
+@media screen and (max-width: 768px) { 
     .portfolio-boxes {
         flex-direction: column;
+        align-content: center;
+    }
+
+    .portfolio-box {
+        width: 45%;
+        justify-content: center;
     }
 
     #bigger-box {
-        width: 35%;
+        width: 90%;
     }
 }
+
+/* decreases font of header when the screen size gets even smaller. */
+@media screen and (max-width: 576px) { 
+    header {
+        font-size: small;
+    }
+    nav ul li {
+        font-size: small;
+    }
+  }
