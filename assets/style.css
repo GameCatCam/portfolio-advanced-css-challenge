@@ -36,6 +36,7 @@ li { /* sets a margin and border for the nav bar links as well as their color */
 
 section ul li { /* removes the border that the above portion sets from the contact me links. */
     border: 0px;
+    background-color: #622AEF;
 }
 
 figure { /* sets the size of the figures for the portfolio boxes as well as centering them */
