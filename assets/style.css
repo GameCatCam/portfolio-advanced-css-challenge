@@ -130,6 +130,12 @@ a { /*removes the underline from the nav links */
     border: 2px black;
 }
 
+#other-img {
+    height: 100px;
+    width: 100px;
+}
+
+
 /*resizes the portfolio boxes to arrange vertically when the scren is smaller */
 @media screen and (max-width: 768px) { 
     .portfolio-boxes {
